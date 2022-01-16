@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+   width: 100vw;
+   height: 100vh;
+   background-image: linear-gradient(#95c7fc, #407dbd);
+   background-size: cover;
+   position: relative;
+}
+
+
+.cloud1{
+    position: absolute;
+    top: 0;
+    height: 250px;
+    left: 2%;
+    
+}
+.cloud2  {
+    position: absolute;
+    height: 200px;
+    top: 35%;
+    left: 30%;
+    background-image: none;
+}
+
+.cloud3 {
+    position: absolute;
+    height: 150px;
+    top: 5%;
+    left: 30%;
+}
+.cloud4 {
+    position: absolute;
+    right: 0;
+    height: 250px;
+
+}
+
+.trees1 {
+   position: absolute;
+   bottom: 0%;
+   height: 250px;
+}
+
+.trees2 {
+    position: absolute;
+    height: 300px;
+    right: 0;
+    bottom: -5%;
+}
+.plane {
+  position: absolute;
+  width: 400px;
+  bottom: 0;
+  left: -70%;
+  animation: animation 15s linear 0ms infinite forwards normal; /*animation name, animation-duration, animation-iteration-count, animation-timing-function*/
+  
+}
+
+@keyframes animation {
+  0% {
+     bottom: 0;
+     left: -70%;
+  }
+
+  100% {
+      left: 110%;
+      bottom: 60%;
+     
+  }
+
+}
+
+.plane2 {
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+    left: -50%;
+    animation: plane2 20s linear 5s infinite forwards normal;  
+
+}
+
+@keyframes plane2 {
+    0% {
+       bottom: 0;
+       left: -50%;
+    }
+    100% {
+        bottom: 40%;
+        left: 110%;
+    }
+}
+
+.jets {
+    position: absolute;
+    width: 200px;
+    right: -15%;
+    top: 45%;
+    animation: jets 8s ease-in 5s infinite backwards normal;
+}
+@keyframes jets {
+    0% {
+        right: -15%;
+        top: 10%;
+    }
+    100% {
+        right: 110%;
+        top: 20%;
+    }
+}
+
+
+.jets2 {
+    position: absolute;
+    width: 150px;
+    left: -15%;
+    top: 10%;
+    animation: jets2 9s ease-out 10s infinite forwards normal;
+}
+
+@keyframes jets2 {
+    0% {
+        left: -15%;
+        top: 10%;
+    }
+
+    100% {
+        left: 110%;
+        top: 50%;
+    }
+}
+
+.car {
+    position: absolute;
+    width: 240px;
+    align-self: flex-end;
+    bottom: -10%;
+    left: -115%;
+    animation: car 12s linear 1s infinite forwards normal;
+}
+@keyframes car {
+    0% {
+        left: -115%;
+    }
+    100% {
+        left: 110%;
+    }
+}
+
